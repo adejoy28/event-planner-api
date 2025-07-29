@@ -1,0 +1,44 @@
+# Users Endpoints
+
+
+# Request to get all Users
+
+GET http://localhost:3000/users/
+
+
+###
+# Request to a get User with :_id
+
+GET http://localhost:3000/users/6888548ecb79a20de83b52a8
+
+###
+
+# Request to Create User
+POST http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+{
+    "email": "test@example.com",
+    "name": "Test User",
+    "password": "password123",
+    "avatar": "https://avatar.iran.liara.run/public/16"
+    
+}
+
+###
+# Request to Update User
+PUT http://localhost:3000/users/6888548ecb79a20de83b52a8 HTTP/1.1
+content-type: application/json
+
+{
+    "email": "Christ@example.com",
+    "name": "Chris James",
+    "password": "password123",
+    "avatar": "https://avatar.iran.liara.run/public/16"
+}
+
+###
+# Request to Create User
+DELETE http://localhost:3000/users/6888548ecb79a20de83b52a8
+
+
