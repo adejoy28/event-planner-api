@@ -2,11 +2,11 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
     info: {
-        title: 'Events Management API',
-        description: 'Events Management API'
+        title: 'Events Planner API',
+        description: 'Events Planner API'
     },
-    host: 'localhost:3000',
-    schemes: ['http', 'https']
+    host: 'event-planner-api-ob41.onrender.com',
+    schemes: ['https']
 };
 
 const outputFile = './swagger.json';
